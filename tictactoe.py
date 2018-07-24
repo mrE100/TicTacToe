@@ -1,12 +1,11 @@
-import random
-def first():
-    first = input('Кто ходит первым (1 - компьютер, 2 - пользователь): ')
-    return first
+import randomdef first():
+    while True:
+        first = input('Кто ходит первым (1 - компьютер, 2 - пользователь): ')
+        if first in first_must:
+            return first
+    
+first_must = ('1', '2')
 first = first()
-# забахать проверку ввода
-#while first != 1 or first != 2:
-#    print('Надо ввести или цифру 1, или цифру 2')
-#    first = first()
     
 matrix = [[' ', '1', '2', '3'],
           ['a', ' ', ' ', ' '],
